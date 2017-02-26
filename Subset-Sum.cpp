@@ -1,3 +1,7 @@
+/*Given a set of non-negative integers, and a value sum, determine if there is a
+
+subset of the given set with sum equal to given sum.*/
+
 #include <iostream>
 
 bool subset_sum(int *set, int n, int sum)
@@ -25,14 +29,14 @@ bool subset_sum(int *set, int n, int sum)
 
 		}
 	}
-	for (int i=0; i <=n; i++)
-	{
-		for(int j=0; j<=sum; j++)
-		{
-			std::cout<<table[i][j]<<" ";
-		}
-		std::cout<<std::endl;
-	}
+// 	for (int i=0; i <=n; i++)
+// 	{
+// 		for(int j=0; j<=sum; j++)
+// 		{
+// 			std::cout<<table[i][j]<<" ";
+// 		}
+// 		std::cout<<std::endl;
+// 	}
 	return table[n][sum];
 }
 
