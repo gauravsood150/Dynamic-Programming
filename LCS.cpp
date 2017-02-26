@@ -17,7 +17,7 @@ int LCS(std::string str1, std::string str2, int m, int n)
 		{
 			if(i==0 || j==0) table[i][j]=0;
 
-			else if(str1[i]==str2[j])
+			else if(str1[i-1]==str2[j-1])
 				table[i][j]=1+table[i-1][j-1];
 			else 
 				table[i][j]=std::max(table[i-1][j], table[i][j-1]);
