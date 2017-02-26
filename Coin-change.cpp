@@ -1,3 +1,9 @@
+/*Given a value V, if we want to make change for V cents, and we have infinite
+
+supply of each of C = { C1, C2, .. , Cm} valued coins, what is the minimum
+
+number of coins to make the change?*/
+
 #include <iostream>
 #include <limits.h>
 
@@ -18,10 +24,10 @@ int coin_change(int* coins, int V, int n)
 					table[i]=1+temp;
 			}
 		}
-	for (int i = 0; i <=V; ++i)
-	{
-		std::cout<<table[i]<<" ";
-	}
+// 	for (int i = 0; i <=V; ++i)
+// 	{
+// 		std::cout<<table[i]<<" ";
+// 	}
 	return table[V];
 }
 
