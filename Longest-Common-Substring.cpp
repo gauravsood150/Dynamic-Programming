@@ -1,3 +1,7 @@
+/*Given two strings ‘X’ and ‘Y’ of lengths N and M respectively, find the length of
+
+the longest common substring.*/
+
 #include <iostream>
 #include <cstring>
 #include <algorithm>
