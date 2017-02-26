@@ -16,11 +16,11 @@ int LPS(std::string str1, int m)
 			else 
 				table[i][j]=std::max(table[i-1][j], table[i][j-1]);
 		}
-	for(int i=0; i<=m; i++)
-	{	for(int j=0; j<=m; j++)
-			std::cout<<table[i][j]<<" ";
-		std::cout<<std::endl;
-	}
+// 	for(int i=0; i<=m; i++)
+// 	{	for(int j=0; j<=m; j++)
+// 			std::cout<<table[i][j]<<" ";
+// 		std::cout<<std::endl;
+// 	}
 	return table[m][m];
 }
 
