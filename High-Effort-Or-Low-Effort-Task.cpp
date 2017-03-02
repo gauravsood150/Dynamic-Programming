@@ -1,3 +1,7 @@
+/*You are given n days and for each day (di) you could either perform a high effort tasks (hi) or
+a low effort tasks (li) or no task with the constraint that you can choose a high-effort tasks only
+if you chose no task on the previous day.*/
+
 #include <iostream> 
 using namespace std;
 
