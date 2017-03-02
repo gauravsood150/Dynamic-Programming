@@ -46,7 +46,7 @@ int WJS(job *s, int n)
 		{
 			if(s[i].start_time >= s[j].finish_time)
 			{
-				table[i]=table[i] +s[j].profit;
+				table[i]+=table[j];
 				break;
 			}
 		}
